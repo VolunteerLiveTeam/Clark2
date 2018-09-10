@@ -14,7 +14,8 @@ const config = convict({
     bot: {
         name: {
             format: String,
-            default: "kralC"
+            default: "kralC",
+            env: "BOT_NAME"
         }
     },
     redis: {
