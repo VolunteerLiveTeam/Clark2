@@ -15,11 +15,11 @@ export default (bot: T.BotScript) => {
 
 As a Citizen Reporter, you have access to all our Live Thread Discord chat channels. These are the channels where the team operates our LTs and you can communicate directly with them. If you help out on a live thread, type \`i was here\` in the chat and I will give you a special badge on your Discord profile to mark that.
 
-If you are interested in becoming a full member, please fill out this form: <insert link here>
+If you are interested in becoming a full member, please fill out this form: ${process.env.FORM_URL}
 
 Typically the path to membership is to participate in two threads as a Citizen Reporter and two more as a Trainee Member. We'll send you a message as you reach these thresholds.
 
-In addition, here is the VLT's internal manual, which you may find interesting:
+In addition, here is the VLT's internal manual, which you may find interesting: ${process.env.MANUAL_URL}
 
 - Clark, your friendly VLT Bot`);
       }
