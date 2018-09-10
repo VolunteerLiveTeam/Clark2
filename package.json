@@ -1,0 +1,23 @@
+{
+  "name": "clark2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/convict": "^4.2.0",
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^10.5.2",
+    "@types/redis": "^2.8.6",
+    "convict": "^4.3.2",
+    "discord.js": "^11.3.2",
+    "dotenv": "^6.0.0",
+    "redis": "^2.8.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  }
+}
