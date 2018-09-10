@@ -17,7 +17,7 @@ exports.default = (bot) => {
                     added.push([key, val]);
                 }
             });
-            if (added.some(x => x[1].name === "Citizen Reporter")) {
+            if (added.some(x => x[1].name === (process.env.TRIGGER_ROLE_NAME || "Citizen Reporters"))) {
                 yield newM.sendMessage(`Bleep bloop! A VLT Member has given you the Citizen Reporter role. You are now among those who have expressed interest in helping the VLT cover events, find sources, and run threads.
 
 As a Citizen Reporter, you have access to all our Live Thread Discord chat channels. These are the channels where the team operates our LTs and you can communicate directly with them. If you help out on a live thread, type \`i was here\` in the chat and I will give you a special badge on your Discord profile to mark that.
